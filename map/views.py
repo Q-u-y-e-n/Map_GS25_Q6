@@ -1,0 +1,7 @@
+# Create your views here.
+from django.shortcuts import render
+
+# Create your views here.
+
+def mapsPage(request):
+    return render(request, 'map_detail.html')

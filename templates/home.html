@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+    AQT_GIS
+{% endblock %}
+
+    {% block content %}
+    <header>
+        <div class="navbar-container">
+            <ul class="navbar">
+                
+                    <img class="img-logo" src="{% static 'img/logo.jpg' %}" alt="logo gs25">    
+                
+               
+            </ul>
+            <ul class="navbar">
+                <li class="nav-item">Trang chủ</li>
+                <li class="nav-item">Cửa hàng</li>
+                <li class="nav-item">Liên hệ</li>
+                <li class="nav-item user"><i class="fa-solid fa-circle-user"></i></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img class="img-banner" src="{% static 'img/banner.jpg' %}" alt="banner gs25">        
+        </div>
+    </header>
+    <main>
+   <h1 class="title-home">Bản đồ cửa hàng GS25</h1>
+   
+   <div class="main-container">
+        <div class="main-distance-filter">
+            
+              
+           
+                  
+        </div>
+        <div class="main-search-location">
+            <input class="input-search" type="text" name="" id="" placeholder="Nhập vị trí của bạn" class="input-search">
+        </div>
+        <div class="main-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+   </div>
+
+   <div class="body_container">
+
+        <div class="side one">
+            <div class="item-one">
+                <p class="item-header">GS25 Nguyễn Văn Luông</p>
+                <p class="item-text">Số 223 Đường Nguyễn Văn Luông, Phường 11, Quận 6, Thành phố Hồ Chí Minh <br>
+                    (028) 71025218
+                    </p>
+                <a class="link-item-one" href="">Xem bản đồ</a>
+            </div>
+            <div class="item-one">
+                <p class="item-header">GS25 40-42 Bình Phú</p>
+                <p class="item-text">40 – 42 Bình Phú, Phường 11, Quận 6, Thành phố Hồ Chí Minh <br>
+                    (028) 71025204
+                    </p>
+                <a class="link-item-one" href="">Xem bản đồ</a>
+            </div>
+            <div class="item-one">
+                <p class="item-header">GS25 Trần Văn Kêu</p>
+                <p class="item-text">45-47 Đường số 11, phường 10, quận 6, TP Hồ Chí Minh<br>
+                    (028) 71025218
+                    </p>
+                <a class="link-item-one" href="">Xem bản đồ</a>
+            </div>   
+        </div>
+
+        <div class="side two">
+            <div class="item-one">
+                <div class="item-one">
+                    <p class="item-header">GS25 Viva Riverside </p>
+                    <p class="item-text">Lô thương mại số 1.25 thuộc chung cư Viva Riverside tại số 1472 Võ Văn Kiệt và số 455-449 Gia Phú, phường 3, quận 6, Thành Phố Hồ Chí Minh
+                      <br>  (028) 71025145
+                        </p>
+                    <a class="link-item-one" href="">Xem bản đồ</a>
+                </div>
+                <div class="item-one">
+                    <p class="item-header">GS25 Hậu Giang</p>
+                    <p class="item-text">số 489B/18-18A, đường Hậu Giang, phường 11, quận 6 <br>
+                        (028) 71025099
+                        </p>
+                    <a class="link-item-one" href="">Xem bản đồ</a>
+                </div>
+                <div class="item-one">
+                    <p class="item-header">GS25 Bình Phú</p>
+                    <p class="item-text">1E - 3E Cư xá Phú Lâm D, Bình Phú, P.10 , Quận 6 <br>
+                        (028) 71025086
+                        </p>
+                    <a class="link-item-one" href="">Xem bản đồ</a>
+                </div>
+        </div>
+   </div>
+</main>
+{% endblock %}
+{% block script %}  
+{% endblock %}
+
+
