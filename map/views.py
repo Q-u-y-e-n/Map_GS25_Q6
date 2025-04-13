@@ -4,4 +4,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def mapsPage(request):
-    return render(request, 'map_detail.html')
+    return render(request, 'map/map_detail.html')
