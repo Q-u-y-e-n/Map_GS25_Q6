@@ -5,4 +5,5 @@ app_name = 'map'
 urlpatterns = [
     path('', views.mapsPage),
     path('co-ban/', views.mapsPage, name="co-ban"),
+     path('nvl/', views.NVL),
 ]

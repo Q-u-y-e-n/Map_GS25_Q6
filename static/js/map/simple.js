@@ -1,7 +1,8 @@
 // Cấu hình bản đồ
 let config = {
     minZoom: 7,
-    maxZoom: 18
+    maxZoom: 18,
+    fullscreenControl: true,
 };
 
 // Độ phóng đại khi bản đồ được mở

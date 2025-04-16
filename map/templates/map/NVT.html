@@ -2,11 +2,11 @@
 
 {% load static %}
 
-{% block title %} Vị trí cửa hàng {% endblock %}
+{% block title %} GS25 Nguyễn Văn Luông {% endblock %}
 
 {% block map %}
 <link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}" />
-<link rel="stylesheet" href="{% static 'css/map/map.css' %}" />
+<link rel="stylesheet" href="{% static 'css/map/nvl.css' %}" />
 <script src="{% static 'leaflet/leaflet.js' %}"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.6/dist/css/autocomplete.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.6/dist/js/autocomplete.min.js"></script>
@@ -14,18 +14,24 @@
 <script src="{% static 'leaflet/Control.FullScreen.js' %}"></script>
 
 
+
 {% endblock %}
 
 {% block content %}
 <section class="special-services">
     <div class="container marker-position mb-3">
-        <div class="auto-search-wrapper loupe text-center">          
+        <div class="auto-search-wrapper loupe text-center">
         </div>
     </div>
     <div class="container-fluid ">
         <div class="row" style="height: 800px">
-            <div id="map"></div>
+            <div id="map">
+
+                
+            </div>
+           
         </div>
+        
     </div>
 </section>
 
@@ -33,5 +39,5 @@
 {% endblock %}
 
 {% block script %}
-<script src="{% static 'js/map/simple.js' %}"></script>
+<script src="{% static 'js/map/NVL.js' %}"></script>
 {% endblock %}

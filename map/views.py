@@ -5,3 +5,5 @@ from django.shortcuts import render
 
 def mapsPage(request):
     return render(request, 'map/map_detail.html')
+def NVL(request):
+    return render(request, 'map/NVT.html')
