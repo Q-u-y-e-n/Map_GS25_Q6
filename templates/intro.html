@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+    AQT_GIS
+{% endblock %}
+{% block Style %}
+a.nav-item-link {
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 768px) {
+    .navbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung */
+    justify-content: center; /* Căn giữa nội dung */
+    }
+    .navbar {
+        flex-direction: column;
+        
+    }
+    .img-logo{
+        display: none;
+    }
+    .nav-item-link{
+        background-color: RGB(20, 158, 238); /* Màu nền */
+        color: white; /* Màu chữ */
+        width: 100% !important;; /* Chiều rộng 100% */
+        padding: 10px auto;
+       
+        
+    }
+    .nav-item{
+        flex-direction: column;
+        justify-content: center; /* Căn giữa nội dung */
+    }
+}
+
+footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: RGB(20, 158, 238);
+        padding: 10px 0;
+    }
+
+.text-footer {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+.container-intro {
+        background-color: RGB(153, 238, 255);
+        border-radius: 10px;
+    }
+.text-begin {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 16px 20px
+}
+.text-contain-main{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 16px;
+    display-wrap: wrap;
+   
+    
+}
+.text-main {
+    font-size: 20px;
+   width: 60%;
+   line-height: 1.6;
+
+}
+.img-main {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+.text-end{
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 16px 20px;
+}
+@media (max-width: 768px) {
+    .text-contain-main {
+        flex-direction: column;
+       
+    }
+    .tex-main{
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .img-main {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        
+    }
+}
+
+
+
+{% endblock %}
+
+    {% block content %}
+    <header>
+        <div class="navbar-container">
+            <ul class="navbar">
+                
+                    <img class="img-logo" src="{% static 'img/logo.jpg' %}" alt="logo gs25">    
+                
+               
+            </ul>
+            <ul class="navbar">
+                <li class="nav-item"><a class="nav-item-link" href="/gioithieu">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/sanpham">Sản phẩm</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/lienhe">Liên hệ</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <main>
+   <h1 class="title-home">Trang Giới Thiệu</h1>
+   
+   <div class="container-intro">
+    <p class="text-begin">Chào mừng bạn đến với website Xem Cửa Hàng GS25 Quận 6 – công cụ tiện lợi giúp bạn tìm kiếm nhanh chóng các cửa hàng GS25 nằm trong khu vực Quận 6, TP. Hồ Chí Minh.</p>
+    <div class="text-contain-main">
+        <p class="text-main">Với giao diện thân thiện và bản đồ tương tác trực quan, website sẽ giúp bạn xác định chính xác vị trí các cửa hàng GS25 trong khu vực Quận 6, đi kèm với các thông tin quan trọng như địa chỉ, giờ hoạt động, dịch vụ nổi bật và cả hướng dẫn đường đi. Dù bạn đang ở nhà, ngoài đường hay mới đặt chân đến Quận 6, bạn đều có thể nhanh chóng tìm được cửa hàng GS25 gần nhất và phù hợp nhất với nhu cầu.</p>
+        <img class="img-main" src="/static/img/img-main.png" alt="img-main">
+    </div>
+    <p class="text-end">Hãy để hành trình mua sắm của bạn bắt đầu dễ dàng hơn bao giờ hết – chỉ cần truy cập và khám phá!</p>
+   </div>
+</main>
+<footer>
+    <p class="text-footer">GS 25 Vietnam - Chuỗi cửa hàng tiện lợi đến từ Hàn Quốc - Mở cửa 24/7. Copyright 
+        © 2017 by GS 25 Vietnam. All Rights Reserved.</p>
+</footer>
+{% endblock %}
+{% block script %}  
+
+{% endblock %}
+
+

@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+    AQT_GIS
+{% endblock %}
+{% block Style %}
+a.nav-item-link {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung */
+    justify-content: center; /* Căn giữa nội dung */
+    }
+    .navbar {
+        flex-direction: column;
+        
+    }
+    .img-logo{
+        display: none;
+    }
+    .nav-item-link{
+        background-color: RGB(20, 158, 238); /* Màu nền */
+        color: white; /* Màu chữ */
+        width: 100% !important;; /* Chiều rộng 100% */
+        padding: 10px auto;
+       
+        
+    }
+    .nav-item{
+        flex-direction: column;
+        justify-content: center; /* Căn giữa nội dung */
+    }
+}
+footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: RGB(20, 158, 238);
+        padding: 10px 0;
+    }
+
+    .text-footer {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+.title-home{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-contact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:RGB(206, 235, 244);
+    padding: 20px 120px;
+    margin-top: 100px;
+}
+contact-text{
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    width: 50%;
+    
+}
+.text-contact{
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+.myheart{
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.contact-item{
+    display: flex;
+    line-height: 1.6;
+    align-items: center;
+   
+    
+}
+.contact-text{
+   
+    font-size: 20px;
+}
+.header-my{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+   
+    color: black;
+    padding: 8.9px;
+    border-radius: 10px;
+    
+}
+.header-contactt{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+    color: black;
+    padding: 16px 0;
+    border-radius: 10px;
+}
+icon{
+    margin-top: 4px;
+}
+
+{% endblock %}
+
+    {% block content %}
+    <header>
+        <div class="navbar-container">
+            <ul class="navbar">
+                
+                    <img class="img-logo" src="{% static 'img/logo.jpg' %}" alt="logo gs25">    
+                
+               
+            </ul>
+            <ul class="navbar">
+                <li class="nav-item"><a class="nav-item-link" href="/gioithieu">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/sanpham">Sản phẩm</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/lienhe">Liên hệ</a></li>
+            </ul>
+        </div>
+       
+    </header>
+    <main>
+   <h1 class="title-home">Trang Liên Hệ</h1>
+   <div class="container-contact">
+       <div class="myheart">
+        <p class="header-my">Xin chân thành cảm ơn</p>
+        <p> "Cảm ơn bạn đã đồng hành cùng chúng tôi. Hãy luôn tin tưởng, vì chúng tôi luôn nỗ lực mang đến cho bạn những trải nghiệm tốt nhất. Sự tin tưởng của bạn là động lực để chúng tôi phát triển mỗi ngày."</p>
+
+       </div>
+       <div class="contact-text">
+            <p class="header-contactt">Văn Phòng GS25 Vietnam</p>
+            <div class="contact-item">
+                <i class="icon fa-solid fa-location-dot"></i>
+                <p class="text-contact">Địa chỉ: 106 Nguyễn Giãn Thanh Phường 13 quận 10</p>
+            </div>
+            <div class="contact-item">
+                <i class="icon fa-solid fa-phone-volume"></i>
+                <p class="text-contact">Số điện thoại:(+84) 28 7302 2525
+                    Hotline:1900 63 60 78</p>
+            </div>
+            <div class="contact-item">
+                <i class="icon fa-solid fa-print"></i>
+                <p class="text-contact">Fax:(+84) 28 3528 0012</p>
+            </div>
+            <div class="contact-item">
+                <i class="icon fa-solid fa-envelope"></i>
+                <p class="text-contact">Email:hello@gs25.com.vn</p>
+            </div>
+       </div>
+   </div>
+   
+<footer>
+    <p class="text-footer">GS 25 Vietnam - Chuỗi cửa hàng tiện lợi đến từ Hàn Quốc - Mở cửa 24/7. Copyright 
+        © 2017 by GS 25 Vietnam. All Rights Reserved.</p>
+</footer>
+{% endblock %}
+{% block script %}  
+
+{% endblock %}
+
+

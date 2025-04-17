@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+    AQT_GIS
+{% endblock %}
+{% block Style %}
+a.nav-item-link {
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 768px) {
+    .navbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung */
+    justify-content: center; /* Căn giữa nội dung */
+    }
+    .navbar {
+        flex-direction: column;
+        
+    }
+    .img-logo{
+        display: none;
+    }
+    .nav-item-link{
+        background-color: RGB(20, 158, 238); /* Màu nền */
+        color: white; /* Màu chữ */
+        width: 100% !important;; /* Chiều rộng 100% */
+        padding: 10px auto;
+       
+        
+    }
+    .nav-item{
+        flex-direction: column;
+        justify-content: center; /* Căn giữa nội dung */
+    }
+}
+
+footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: RGB(20, 158, 238);
+        padding: 10px 0;
+    }
+
+    .text-footer {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+.title-home{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header-product{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: RGB(20, 158, 238);
+    color: white;
+    padding: 16px 0;
+}
+.container-product{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: RGB(238, 255, 255);
+   
+}
+.product-itemm{
+   
+    margin-bottom: 20px;
+    border-radius: 10px;
+   background-color: white;
+    
+}
+.img-item-product{
+    width: 250px;
+    height: 300px;
+}
+.name-img-item-product{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    color: RGB(20, 158, 238);
+}
+
+
+{% endblock %}
+
+    {% block content %}
+    <header>
+        <div class="navbar-container">
+            <ul class="navbar">
+                
+                    <img class="img-logo" src="{% static 'img/logo.jpg' %}" alt="logo gs25">    
+                
+               
+            </ul>
+            <ul class="navbar">
+                <li class="nav-item"><a class="nav-item-link" href="/gioithieu">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/sanpham">Sản phẩm</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="/lienhe">Liên hệ</a></li>
+            </ul>
+        </div>
+       
+    </header>
+    <main>
+   <h1 class="title-home">Trang Sản Phẩm</h1>
+   <p class="header-product">Các sản phẩm sắp ra mắt</p>
+   <div class="container-product">
+        <div class="product-itemm">
+            <img class="img-item-product" src="/static/img/youus.png" alt="youus">
+            <p class="name-img-item-product">YOUUS (Sky Full) <br> Grapefruit Juice 330ml</p>
+        </div>
+        <div class="product-itemm">
+            <img class="img-item-product" src="/static/img/bon.png" alt="bon">
+            <p class="name-img-item-product">C'est Bon Bánh <br> bông lan gạo 90g</p>
+        </div>
+        <div class="product-itemm">
+            <img class="img-item-product" src="/static/img/mask.png" alt="khẩu trang">
+            <p class="name-img-item-product">MAYAN Khẩu  trang <br> 3D Medi 5 cái</p>
+        </div>
+        <div class="product-itemm">
+            <img class="img-item-product" src="/static/img/mytom.png" alt="mỳ tôm">
+            <p class="name-img-item-product">YOUUS Bánh Topokki <br> ăn liền cực cay</p>
+        </div>
+   </div>
+
+   </div>
+<footer>
+    <p class="text-footer">GS 25 Vietnam - Chuỗi cửa hàng tiện lợi đến từ Hàn Quốc - Mở cửa 24/7. Copyright 
+        © 2017 by GS 25 Vietnam. All Rights Reserved.</p>
+</footer>
+{% endblock %}
+{% block script %}  
+
+{% endblock %}
+
+

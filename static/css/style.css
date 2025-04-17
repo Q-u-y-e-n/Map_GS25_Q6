@@ -141,3 +141,15 @@ main {
 }
 
 /* drop down menu */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: RGB(20, 158, 238);
+    padding: 10px 0;
+}
+
+.container-intro {
+    background-color: RGB(153, 238, 255);
+}
