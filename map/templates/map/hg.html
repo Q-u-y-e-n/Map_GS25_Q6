@@ -18,14 +18,16 @@
     
 {% block Style %}
 body { margin: 0; font-family: sans-serif; }
-    #map { height: 600px; }
+    #map { height: 650px; }
 
     .description {
+       
       background: white;
       padding: 10px;
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       font-size: 14px;
+      
     }
 
     .controls {
@@ -44,10 +46,10 @@ body { margin: 0; font-family: sans-serif; }
 <section class="special-services">
     <div class="container marker-position mb-3">
        
-            <h2 style="text-align: center; ">Vị trí các cửa hàng GS25 trong khu vực quận 6</h2>
+            <h2 style="text-align: center; ">GS25 Hậu Giang</h2>
 
             <div class="controls">
-              <label><input type="checkbox" id="toggle-markers" checked> Hiện cửa hàng</label>
+              <label><input type="checkbox" id="toggle-markers" checked> Hiển thị vị trí cửa hàng</label>
              
             </div>
        
@@ -63,5 +65,5 @@ body { margin: 0; font-family: sans-serif; }
 
 
 {% block script %}
-<script src="{% static 'js/map/simple.js' %}"></script>
+<script src="{% static 'js/map/hg.js' %}"></script>
 {% endblock %}

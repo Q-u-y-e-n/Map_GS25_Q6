@@ -5,8 +5,8 @@ let config = {
 };
 
 const zoom = 17;
-const lat = 10.73390;
-const lng = 106.62369;
+const lat = 10.74562;
+const lng = 106.63450;
 
 
 const map = L.map("map", config).setView([lat, lng], zoom);
@@ -18,7 +18,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 let points = [
 
-    [10.7338687, 106.6239282, "GS25 Nguyễn Văn Luông"],
+    [10.7455956, 106.6342674, "GS25 Hậu Giang"],
 
 ];
 
@@ -67,9 +67,9 @@ legend.onAdd = function () {
     let div = L.DomUtil.create("div", "description");
     div.innerHTML = `
     <div style="width: 250px; margin-left: 0.9rem; margin-top: 0.5rem;">
-        <img src="/static/img/nvl3.png" alt="hong có" style="width: 100%; height: auto; border-radius: 8px; margin-left: 0.14rem; margin-top: 0.5rem"/>
+        <img src="/static/img/hg.png" alt="hong có" style="width: 100%; height: auto; border-radius: 8px; margin-left: 0.14rem; margin-top: 0.5rem"/>
        
-        <h3 style="margin: 10px 0 5px;; text-align: center; color: RGB(45, 132, 203)">GS25 Nguyễn Văn Luông</h3>
+        <h3 style="margin: 10px 0 5px;; text-align: center; color: RGB(45, 132, 203)">GS25 Hậu Giang</h3>
          <hr  style="margin: 10px 0; border: 1px solid #ccc;"/>
         <h4 style="margin: 2px auto; text-align: center; color: RGB(45, 132, 203)">Thông tin cửa hàng</h4>
         <br/>  
@@ -78,7 +78,7 @@ legend.onAdd = function () {
         <br/>  
         <p style="margin: 0;"><i class="fa-solid fa-phone"></i> Số điện thoại: (028) 71025218</p>
         <br/>  
-        <p style="margin: 0;"><i class="fa-solid fa-location-dot"></i> Địa chỉ: Số 223 Đường Nguyễn Văn Luông, Phường 11, Quận 6, Thành phố Hồ Chí Minh</p>
+        <p style="margin: 0;"><i class="fa-solid fa-location-dot"></i> Địa chỉ: số 489B/18-18A, đường Hậu Giang, phường 11, quận 6, Hồ Chí Minh, Việt Nam</p>
       </div>
   `;
     return div;

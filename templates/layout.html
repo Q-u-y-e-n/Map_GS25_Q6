@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
 {% load static %}
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="{% static 'UTF-8' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'fontawesome-free-6.7.2-web\fontawesome-free-6.7.2-web\css\all.css' %}">
@@ -15,6 +14,10 @@
     {% block map %}
 
     {% endblock %}
+    <style>
+        {% block Style %}{% endblock %}
+    </style>
+
 </head>
 
 <body>
@@ -22,8 +25,8 @@
    
     {% endblock %}
     {% block script %}
-    <script src="{% static 'js/map/simple.js' %}"></script>
-    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    {% comment %} <script src="{% static 'js/map/simple.js' %}"></script>
+    <script src="{% static 'http://code.jquery.com/jquery-1.7.min.js '%}"></script> {% endcomment %}
     {% endblock %}
 </body>
 

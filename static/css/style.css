@@ -44,6 +44,11 @@ body {
 
 }
 
+a.nav-item-link {
+    text-decoration: none;
+    color: white;
+}
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -136,14 +141,3 @@ main {
 }
 
 /* drop down menu */
-.description {
-    width: 300px;
-    font-size: 16px;
-    color: #333;
-    padding: 10px 14px;
-    background-color: hsla(0, 0%, 100%, 0.8);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    line-height: 120%;
-    border: 1px solid grey;
-}
