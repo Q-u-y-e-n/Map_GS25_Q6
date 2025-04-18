@@ -61,24 +61,3 @@ document.getElementById("toggle-markers").addEventListener("change", function (e
         removeMarkers();
     }
 });
-
-// Thêm chú thích
-const legend = L.control({ position: "bottomleft" });
-
-legend.onAdd = function () {
-    let div = L.DomUtil.create("div", "description");
-    div.innerHTML = `
-    <b>Thu Điếu - Nguyễn Khuyến</b><br>
-    Ao thu lạnh lẽo nước trong veo,<br>
-    Một chiếc thuyền câu bé tẻo teo.<br>
-    Sóng biếc theo làn hơi gợn tí,<br>
-    Lá vàng trước gió sẽ đưa vèo.<br>
-    Tầng mây lơ lửng trời xanh ngắt,<br>
-    Ngõ trúc quanh co khách vắng teo.<br>
-    Tựa gối, ôm cần lâu chẳng được,<br>
-    Cá đâu đớp động dưới chân bèo.<br>
-  `;
-    return div;
-};
-
-legend.addTo(map);
